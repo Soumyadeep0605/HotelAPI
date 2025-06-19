@@ -23,7 +23,7 @@ public class DatapoviderUtility {
 		
 		
 		
-		String fp= rb.getString("FilePath");
+		String fp= System.getProperty("user.dir")+rb.getString("FilePath");
 		ExcelToPOJOMapper etpm= new ExcelToPOJOMapper(fp, "Data");
 		
 		List<HotelPojo> dataList= etpm.getBookingdata();
