@@ -30,7 +30,7 @@ public class ExcelToPOJOMapper {
 
 	
 	
-	public static List<HotelPojo> getBookingdata() throws IOException
+	public List<HotelPojo> getBookingdata() throws IOException
 	{
 		
 		List<HotelPojo> dataList= new ArrayList<>();

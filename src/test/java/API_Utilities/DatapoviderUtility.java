@@ -2,10 +2,13 @@ package API_Utilities;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Properties;
+import java.util.ResourceBundle;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 
+import API_EndPoint.routesAsProperties;
 import API_Payload.HotelPojo;
 import API_Test.HotelTest;
 
@@ -15,7 +18,9 @@ public class DatapoviderUtility {
 	@DataProvider(name= "BookingDataProvider")
 	public Object[][] getBookingData()throws IOException
 	{
-		ExcelToPOJOMapper etpm= new ExcelToPOJOMapper(HotelTest.FilePath, "Data");
+		ResourceBundle rb=  ResourceBundle.getBundle("General");
+		String fp= rb.getString("FilePath");
+		ExcelToPOJOMapper etpm= new ExcelToPOJOMapper(fp, "Data");
 		
 		List<HotelPojo> dataList= etpm.getBookingdata();
 		Object[][] data= new Object[(dataList.size())][1];
