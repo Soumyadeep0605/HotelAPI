@@ -18,7 +18,11 @@ public class DatapoviderUtility {
 	@DataProvider(name= "BookingDataProvider")
 	public Object[][] getBookingData()throws IOException
 	{
-		ResourceBundle rb=  ResourceBundle.getBundle("General");
+		ResourceBundle rb=  ResourceBundle.getBundle("General"); // two ways we can access the elements of a properies file. one by using this ResourceBundle class. 
+		
+		
+		
+		
 		String fp= rb.getString("FilePath");
 		ExcelToPOJOMapper etpm= new ExcelToPOJOMapper(fp, "Data");
 		

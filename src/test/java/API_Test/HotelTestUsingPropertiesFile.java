@@ -66,8 +66,12 @@ public class HotelTestUsingPropertiesFile {
 	
 	
 	
-	public static final String FilePath= "C:\\\\Users\\\\eesou\\\\OneDrive\\\\Desktop\\\\HotelData.xlsx";
-	public static final String XMLFilePath="C:\\\\\\\\Users\\\\\\\\eesou\\\\\\\\OneDrive\\\\\\\\Desktop\\\\\\\\HotelDataTemplate.xml";
+   public static final String FilePath= System.getProperty("user.dir")+"\\src\\test\\resources\\TestData\\HotelData.xlsx";
+	
+	
+	
+	public static final String XMLFilePath=System.getProperty("user.dir")+"src\\test\\resources\\TestData\\HotelDataTemplate.xml";
+	
 	
 	
 		
