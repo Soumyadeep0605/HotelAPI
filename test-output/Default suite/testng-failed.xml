@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="API_Test.HotelTest">
+      <class name="API_Test.HotelTestUsingPropertiesFile">
         <methods>
-          <include name="createBooking" invocation-numbers="0 1 2 3 4"/>
+          <include name="checkUserByname" invocation-numbers="0 1 2 3 4"/>
         </methods>
-      </class> <!-- API_Test.HotelTest -->
+      </class> <!-- API_Test.HotelTestUsingPropertiesFile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -37,6 +37,9 @@ public class HotelEndpoints {
 		
 	}
 	
+	
+	
+	
 public static Response CreateUser(String hp)
 	
 	{

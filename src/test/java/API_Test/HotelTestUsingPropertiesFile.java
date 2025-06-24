@@ -3,6 +3,7 @@ package API_Test;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -17,6 +18,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.javafaker.Faker;
 
 import API_EndPoint.HotelEndpoints;
+import API_EndPoint.HotelEndpointsusingPreperties;
 import API_Payload.HotelBookingDates;
 import API_Payload.HotelPojo;
 import API_Utilities.DatapoviderUtility;
@@ -74,23 +76,45 @@ public class HotelTestUsingPropertiesFile {
 	
 	
 	
-		
+		private static Map<String, Integer> bookingIDMap= new HashMap<>();
 	
 	
-	@Test(dataProvider="BookingDataProvider", dataProviderClass = DatapoviderUtility.class)
+	@Test(priority=1, dataProvider="BookingDataProvider", dataProviderClass = DatapoviderUtility.class)
 	public void createBooking(HotelPojo hp) 
 	{
 		
-		Response res= HotelEndpoints.CreateUser(hp);
+		Response res= HotelEndpointsusingPreperties.CreateUser(hp);
 		 System.out.println(res.asPrettyString());
 		 
 		
 		Assert.assertEquals(res.jsonPath().get("booking.firstname") , hp.getFirstname()); // booking.firstname is my path 
 		
+		int bookingID= res.jsonPath().getInt("bookingid");
+		String key= hp.getFirstname();
+		bookingIDMap.put(key, bookingID);
+		
+		
 		
         System.out.println(res.asPrettyString());
 		System.out.println(res.statusCode());
 		System.out.println("CHECK CHECK CHECK");
+		
+	}
+	
+	
+	@Test(priority=2,dataProvider="BookingDataProvider", dataProviderClass = DatapoviderUtility.class)
+	public void checkUserByname(HotelPojo hp)
+	{
+		String fname=hp.getFirstname();
+		Integer id= bookingIDMap.get(fname);
+		
+		Response res= HotelEndpointsusingPreperties.GetUser(id);
+		Assert.assertEquals(res.jsonPath().get("firstname"), fname);
+		Assert.assertEquals(res.getStatusCode(),200);
+		System.out.println(res.jsonPath().get("firstname").toString());
+		System.out.println(res.jsonPath().get("lastname").toString());
+		System.out.println(res.jsonPath().get("additionalneeds").toString());
+		
 		
 	}
 	

@@ -13,7 +13,9 @@ public class HotelEndpointsusingPreperties {
 	
 	{
 		
-		String url= routesAsProperties.getURL().getString("postURL");
+		String url= routesAsProperties.postURL().getString("PostUser");
+		
+		
 		
 		
 		
@@ -26,12 +28,22 @@ public class HotelEndpointsusingPreperties {
 				.when()
 				.post(url);
 				
+		
+		
+		return res;
+		
+	}
+	
+	
+	public static Response GetUser(int id) 
+	{
+		String getURL= routesAsProperties.getURL().getString("GetUser");
+		Response res= 
 				
-				
-		
-		
-		
-		
+				given()
+				.contentType(ContentType.JSON)
+				.when()
+				.get(getURL+"/"+id);
 		
 		return res;
 		

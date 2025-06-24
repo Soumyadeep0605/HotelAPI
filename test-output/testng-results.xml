@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="6" passed="5" failed="0" skipped="0">
+<testng-results ignored="1" total="11" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-20T01:27:19 IST" name="HotelBookingAPIAutomationSuite" finished-at="2025-06-20T01:27:30 IST" duration-ms="11194">
+  <suite started-at="2025-06-25T01:51:17 IST" name="Default suite" finished-at="2025-06-25T01:51:34 IST" duration-ms="17180">
     <groups>
     </groups>
-    <test started-at="2025-06-20T01:27:19 IST" name="BookingAPITests" finished-at="2025-06-20T01:27:30 IST" duration-ms="11194">
+    <test started-at="2025-06-25T01:51:17 IST" name="Default test" finished-at="2025-06-25T01:51:34 IST" duration-ms="17180">
       <class name="API_Test.HotelTestUsingPropertiesFile">
-        <test-method signature="createBooking(API_Payload.HotelPojo)[pri:0, instance:API_Test.HotelTestUsingPropertiesFile@63355449]" started-at="2025-06-20T01:27:20 IST" name="createBooking" data-provider="BookingDataProvider" finished-at="2025-06-20T01:27:24 IST" duration-ms="4009" status="PASS">
+        <test-method signature="createBooking(API_Payload.HotelPojo)[pri:1, instance:API_Test.HotelTestUsingPropertiesFile@63355449]" started-at="2025-06-25T01:51:18 IST" name="createBooking" data-provider="BookingDataProvider" finished-at="2025-06-25T01:51:22 IST" duration-ms="3666" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createBooking -->
-        <test-method signature="createBooking(API_Payload.HotelPojo)[pri:0, instance:API_Test.HotelTestUsingPropertiesFile@63355449]" started-at="2025-06-20T01:27:24 IST" name="createBooking" data-provider="BookingDataProvider" finished-at="2025-06-20T01:27:26 IST" duration-ms="1633" status="PASS">
+        <test-method signature="createBooking(API_Payload.HotelPojo)[pri:1, instance:API_Test.HotelTestUsingPropertiesFile@63355449]" started-at="2025-06-25T01:51:22 IST" name="createBooking" data-provider="BookingDataProvider" finished-at="2025-06-25T01:51:23 IST" duration-ms="1351" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createBooking -->
-        <test-method signature="createBooking(API_Payload.HotelPojo)[pri:0, instance:API_Test.HotelTestUsingPropertiesFile@63355449]" started-at="2025-06-20T01:27:26 IST" name="createBooking" data-provider="BookingDataProvider" finished-at="2025-06-20T01:27:27 IST" duration-ms="1604" status="PASS">
+        <test-method signature="createBooking(API_Payload.HotelPojo)[pri:1, instance:API_Test.HotelTestUsingPropertiesFile@63355449]" started-at="2025-06-25T01:51:23 IST" name="createBooking" data-provider="BookingDataProvider" finished-at="2025-06-25T01:51:24 IST" duration-ms="1370" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,7 +40,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createBooking -->
-        <test-method signature="createBooking(API_Payload.HotelPojo)[pri:0, instance:API_Test.HotelTestUsingPropertiesFile@63355449]" started-at="2025-06-20T01:27:27 IST" name="createBooking" data-provider="BookingDataProvider" finished-at="2025-06-20T01:27:29 IST" duration-ms="1598" status="PASS">
+        <test-method signature="createBooking(API_Payload.HotelPojo)[pri:1, instance:API_Test.HotelTestUsingPropertiesFile@63355449]" started-at="2025-06-25T01:51:24 IST" name="createBooking" data-provider="BookingDataProvider" finished-at="2025-06-25T01:51:26 IST" duration-ms="1415" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,7 +51,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createBooking -->
-        <test-method signature="createBooking(API_Payload.HotelPojo)[pri:0, instance:API_Test.HotelTestUsingPropertiesFile@63355449]" started-at="2025-06-20T01:27:29 IST" name="createBooking" data-provider="BookingDataProvider" finished-at="2025-06-20T01:27:30 IST" duration-ms="1367" status="PASS">
+        <test-method signature="createBooking(API_Payload.HotelPojo)[pri:1, instance:API_Test.HotelTestUsingPropertiesFile@63355449]" started-at="2025-06-25T01:51:26 IST" name="createBooking" data-provider="BookingDataProvider" finished-at="2025-06-25T01:51:27 IST" duration-ms="1417" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -62,7 +62,62 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createBooking -->
+        <test-method signature="checkUserByname(API_Payload.HotelPojo)[pri:2, instance:API_Test.HotelTestUsingPropertiesFile@63355449]" started-at="2025-06-25T01:51:27 IST" name="checkUserByname" data-provider="BookingDataProvider" finished-at="2025-06-25T01:51:29 IST" duration-ms="1415" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HotelPojo{firstname='Sam', lastname='biswas', totalprice=102, depositpaid=true, bookingdates={checkin='2018-01-01', checkout='2018-01-01'}, additionalneeds='Breakfast'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUserByname -->
+        <test-method signature="checkUserByname(API_Payload.HotelPojo)[pri:2, instance:API_Test.HotelTestUsingPropertiesFile@63355449]" started-at="2025-06-25T01:51:29 IST" name="checkUserByname" data-provider="BookingDataProvider" finished-at="2025-06-25T01:51:30 IST" duration-ms="1393" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HotelPojo{firstname='Jam', lastname='hishas', totalprice=103, depositpaid=false, bookingdates={checkin='2018-01-02', checkout='2018-01-02'}, additionalneeds='Lunch'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUserByname -->
+        <test-method signature="checkUserByname(API_Payload.HotelPojo)[pri:2, instance:API_Test.HotelTestUsingPropertiesFile@63355449]" started-at="2025-06-25T01:51:30 IST" name="checkUserByname" data-provider="BookingDataProvider" finished-at="2025-06-25T01:51:32 IST" duration-ms="1359" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HotelPojo{firstname='Ram', lastname='Liswas', totalprice=104, depositpaid=true, bookingdates={checkin='2018-01-03', checkout='2018-01-03'}, additionalneeds='Dinner'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUserByname -->
+        <test-method signature="checkUserByname(API_Payload.HotelPojo)[pri:2, instance:API_Test.HotelTestUsingPropertiesFile@63355449]" started-at="2025-06-25T01:51:32 IST" name="checkUserByname" data-provider="BookingDataProvider" finished-at="2025-06-25T01:51:33 IST" duration-ms="1420" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HotelPojo{firstname='Cam', lastname='Kiswas', totalprice=105, depositpaid=false, bookingdates={checkin='2018-01-04', checkout='2018-01-04'}, additionalneeds='Supper'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUserByname -->
+        <test-method signature="checkUserByname(API_Payload.HotelPojo)[pri:2, instance:API_Test.HotelTestUsingPropertiesFile@63355449]" started-at="2025-06-25T01:51:33 IST" name="checkUserByname" data-provider="BookingDataProvider" finished-at="2025-06-25T01:51:34 IST" duration-ms="1411" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HotelPojo{firstname='Lam', lastname='Niswas', totalprice=106, depositpaid=true, bookingdates={checkin='2018-01-05', checkout='2018-01-05'}, additionalneeds='Tiffin'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUserByname -->
       </class> <!-- API_Test.HotelTestUsingPropertiesFile -->
-    </test> <!-- BookingAPITests -->
-  </suite> <!-- HotelBookingAPIAutomationSuite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
