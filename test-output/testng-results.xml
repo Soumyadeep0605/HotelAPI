@@ -2,12 +2,12 @@
 <testng-results ignored="1" total="11" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-25T01:51:17 IST" name="Default suite" finished-at="2025-06-25T01:51:34 IST" duration-ms="17180">
+  <suite started-at="2025-06-26T01:22:36 IST" name="HotelBookingAPIAutomationSuite" finished-at="2025-06-26T01:22:54 IST" duration-ms="18282">
     <groups>
     </groups>
-    <test started-at="2025-06-25T01:51:17 IST" name="Default test" finished-at="2025-06-25T01:51:34 IST" duration-ms="17180">
+    <test started-at="2025-06-26T01:22:36 IST" name="BookingAPITests" finished-at="2025-06-26T01:22:54 IST" duration-ms="18282">
       <class name="API_Test.HotelTestUsingPropertiesFile">
-        <test-method signature="createBooking(API_Payload.HotelPojo)[pri:1, instance:API_Test.HotelTestUsingPropertiesFile@63355449]" started-at="2025-06-25T01:51:18 IST" name="createBooking" data-provider="BookingDataProvider" finished-at="2025-06-25T01:51:22 IST" duration-ms="3666" status="PASS">
+        <test-method signature="createBooking(API_Payload.HotelPojo)[pri:1, instance:API_Test.HotelTestUsingPropertiesFile@9353778]" started-at="2025-06-26T01:22:37 IST" name="createBooking" data-provider="BookingDataProvider" finished-at="2025-06-26T01:22:42 IST" duration-ms="4610" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createBooking -->
-        <test-method signature="createBooking(API_Payload.HotelPojo)[pri:1, instance:API_Test.HotelTestUsingPropertiesFile@63355449]" started-at="2025-06-25T01:51:22 IST" name="createBooking" data-provider="BookingDataProvider" finished-at="2025-06-25T01:51:23 IST" duration-ms="1351" status="PASS">
+        <test-method signature="createBooking(API_Payload.HotelPojo)[pri:1, instance:API_Test.HotelTestUsingPropertiesFile@9353778]" started-at="2025-06-26T01:22:42 IST" name="createBooking" data-provider="BookingDataProvider" finished-at="2025-06-26T01:22:43 IST" duration-ms="1401" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createBooking -->
-        <test-method signature="createBooking(API_Payload.HotelPojo)[pri:1, instance:API_Test.HotelTestUsingPropertiesFile@63355449]" started-at="2025-06-25T01:51:23 IST" name="createBooking" data-provider="BookingDataProvider" finished-at="2025-06-25T01:51:24 IST" duration-ms="1370" status="PASS">
+        <test-method signature="createBooking(API_Payload.HotelPojo)[pri:1, instance:API_Test.HotelTestUsingPropertiesFile@9353778]" started-at="2025-06-26T01:22:43 IST" name="createBooking" data-provider="BookingDataProvider" finished-at="2025-06-26T01:22:45 IST" duration-ms="1410" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,7 +40,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createBooking -->
-        <test-method signature="createBooking(API_Payload.HotelPojo)[pri:1, instance:API_Test.HotelTestUsingPropertiesFile@63355449]" started-at="2025-06-25T01:51:24 IST" name="createBooking" data-provider="BookingDataProvider" finished-at="2025-06-25T01:51:26 IST" duration-ms="1415" status="PASS">
+        <test-method signature="createBooking(API_Payload.HotelPojo)[pri:1, instance:API_Test.HotelTestUsingPropertiesFile@9353778]" started-at="2025-06-26T01:22:45 IST" name="createBooking" data-provider="BookingDataProvider" finished-at="2025-06-26T01:22:46 IST" duration-ms="1375" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,7 +51,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createBooking -->
-        <test-method signature="createBooking(API_Payload.HotelPojo)[pri:1, instance:API_Test.HotelTestUsingPropertiesFile@63355449]" started-at="2025-06-25T01:51:26 IST" name="createBooking" data-provider="BookingDataProvider" finished-at="2025-06-25T01:51:27 IST" duration-ms="1417" status="PASS">
+        <test-method signature="createBooking(API_Payload.HotelPojo)[pri:1, instance:API_Test.HotelTestUsingPropertiesFile@9353778]" started-at="2025-06-26T01:22:46 IST" name="createBooking" data-provider="BookingDataProvider" finished-at="2025-06-26T01:22:47 IST" duration-ms="1372" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -62,7 +62,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createBooking -->
-        <test-method signature="checkUserByname(API_Payload.HotelPojo)[pri:2, instance:API_Test.HotelTestUsingPropertiesFile@63355449]" started-at="2025-06-25T01:51:27 IST" name="checkUserByname" data-provider="BookingDataProvider" finished-at="2025-06-25T01:51:29 IST" duration-ms="1415" status="PASS">
+        <test-method signature="checkUserByname(API_Payload.HotelPojo)[pri:2, instance:API_Test.HotelTestUsingPropertiesFile@9353778]" started-at="2025-06-26T01:22:47 IST" name="checkUserByname" data-provider="BookingDataProvider" finished-at="2025-06-26T01:22:49 IST" duration-ms="1396" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -73,7 +73,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkUserByname -->
-        <test-method signature="checkUserByname(API_Payload.HotelPojo)[pri:2, instance:API_Test.HotelTestUsingPropertiesFile@63355449]" started-at="2025-06-25T01:51:29 IST" name="checkUserByname" data-provider="BookingDataProvider" finished-at="2025-06-25T01:51:30 IST" duration-ms="1393" status="PASS">
+        <test-method signature="checkUserByname(API_Payload.HotelPojo)[pri:2, instance:API_Test.HotelTestUsingPropertiesFile@9353778]" started-at="2025-06-26T01:22:49 IST" name="checkUserByname" data-provider="BookingDataProvider" finished-at="2025-06-26T01:22:50 IST" duration-ms="1480" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -84,7 +84,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkUserByname -->
-        <test-method signature="checkUserByname(API_Payload.HotelPojo)[pri:2, instance:API_Test.HotelTestUsingPropertiesFile@63355449]" started-at="2025-06-25T01:51:30 IST" name="checkUserByname" data-provider="BookingDataProvider" finished-at="2025-06-25T01:51:32 IST" duration-ms="1359" status="PASS">
+        <test-method signature="checkUserByname(API_Payload.HotelPojo)[pri:2, instance:API_Test.HotelTestUsingPropertiesFile@9353778]" started-at="2025-06-26T01:22:50 IST" name="checkUserByname" data-provider="BookingDataProvider" finished-at="2025-06-26T01:22:52 IST" duration-ms="1371" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -95,7 +95,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkUserByname -->
-        <test-method signature="checkUserByname(API_Payload.HotelPojo)[pri:2, instance:API_Test.HotelTestUsingPropertiesFile@63355449]" started-at="2025-06-25T01:51:32 IST" name="checkUserByname" data-provider="BookingDataProvider" finished-at="2025-06-25T01:51:33 IST" duration-ms="1420" status="PASS">
+        <test-method signature="checkUserByname(API_Payload.HotelPojo)[pri:2, instance:API_Test.HotelTestUsingPropertiesFile@9353778]" started-at="2025-06-26T01:22:52 IST" name="checkUserByname" data-provider="BookingDataProvider" finished-at="2025-06-26T01:22:53 IST" duration-ms="1442" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -106,7 +106,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkUserByname -->
-        <test-method signature="checkUserByname(API_Payload.HotelPojo)[pri:2, instance:API_Test.HotelTestUsingPropertiesFile@63355449]" started-at="2025-06-25T01:51:33 IST" name="checkUserByname" data-provider="BookingDataProvider" finished-at="2025-06-25T01:51:34 IST" duration-ms="1411" status="PASS">
+        <test-method signature="checkUserByname(API_Payload.HotelPojo)[pri:2, instance:API_Test.HotelTestUsingPropertiesFile@9353778]" started-at="2025-06-26T01:22:53 IST" name="checkUserByname" data-provider="BookingDataProvider" finished-at="2025-06-26T01:22:54 IST" duration-ms="1385" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -118,6 +118,6 @@
           </reporter-output>
         </test-method> <!-- checkUserByname -->
       </class> <!-- API_Test.HotelTestUsingPropertiesFile -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- BookingAPITests -->
+  </suite> <!-- HotelBookingAPIAutomationSuite -->
 </testng-results>

@@ -1,0 +1,16 @@
+Status Code: 200
+Body:
+{
+    "bookingid": 1388,
+    "booking": {
+        "firstname": "Lam",
+        "lastname": "Niswas",
+        "totalprice": 106,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-05",
+            "checkout": "2018-01-05"
+        },
+        "additionalneeds": "Tiffin"
+    }
+}

@@ -1,0 +1,4 @@
+URI: https://restful-booker.herokuapp.com/booking
+Method: POST
+Body:
+{"firstname":"Sam","lastname":"biswas","totalprice":102,"depositpaid":true,"additionalneeds":"Breakfast","bookingdates":{"checkin":"2018-01-01","checkout":"2018-01-01"}}

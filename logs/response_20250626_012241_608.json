@@ -1,0 +1,16 @@
+Status Code: 200
+Body:
+{
+    "bookingid": 1313,
+    "booking": {
+        "firstname": "Sam",
+        "lastname": "biswas",
+        "totalprice": 102,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2018-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}

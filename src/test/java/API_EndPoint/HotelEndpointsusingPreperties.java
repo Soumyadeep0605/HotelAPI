@@ -1,6 +1,7 @@
 package API_EndPoint;
 
 import API_Payload.HotelPojo;
+import API_Utilities.RequestResponseLogger;
 import io.restassured.http.ContentType;
 import io.restassured.mapper.ObjectMapper;
 import io.restassured.response.Response;
@@ -13,7 +14,10 @@ public class HotelEndpointsusingPreperties {
 	
 	{
 		
-		String url= routesAsProperties.postURL().getString("PostUser");
+		String url= routesAsProperties.postURL().getString("PostUser"); 
+		
+		String delur= routesAsProperties.DeleteURL().getString("DeleteUser");
+		
 		
 		
 		
@@ -22,6 +26,7 @@ public class HotelEndpointsusingPreperties {
 		Response res= 
 	    
 				given()
+				.filter(new RequestResponseLogger())
 				.contentType(ContentType.JSON)
 				.body(hp)
 				
